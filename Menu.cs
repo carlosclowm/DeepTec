@@ -12,7 +12,7 @@ namespace DeepTec
 {
     public partial class frmMenu : Form
     {
-        public string ConexDBGlobal = "server=localhost; database=trasplante_de_organos; Uid=root; pwd=peluche785;SslMode=none";
+        public string ConexDBGlobal = "server=85.10.205.173; database=organos; Uid=bedolla; pwd=bedolla123;SslMode=none;old guids=true";
         private int RangoGlobal;
 
         public frmMenu()
@@ -94,6 +94,7 @@ namespace DeepTec
         private void btnDoctores_Click(object sender, EventArgs e)
         {
             Doctores dc = new Doctores();
+            dc.envia_rango(RangoGlobal);
             dc.Show();
             this.Hide();
         }
@@ -108,6 +109,14 @@ namespace DeepTec
             frmLogin lg = new frmLogin();
             this.Close();
             lg.Show();
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            usuarios us = new usuarios();
+            this.Close();
+            us.envia_rango(RangoGlobal);
+            us.Show();
         }
     }
 }

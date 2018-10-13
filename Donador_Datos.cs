@@ -67,9 +67,9 @@ namespace DeepTec
                     txtEstado.Text = row["estado_donador"].ToString();
                     txtRegion.Text = row["region_donador"].ToString();
                     txtCiudad.Text = row["ciudad_donador"].ToString();
-                }catch(Exception e)
+                }catch(Exception ex)
                 {
-                    MessageBox.Show("Seleccione un Campo Valido");
+                    MessageBox.Show("Seleccione un Campo Valido", ex.Message);
                     
                 }
                 

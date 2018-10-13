@@ -98,5 +98,60 @@ namespace DeepTec
             mn.Show();
             this.Dispose();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Organos_Datos OD = new Organos_Datos();
+            OD.btnModificar.Visible = false;
+            OD.Show();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Seguro que dese Borrar?", "Salir", MessageBoxButtons.YesNoCancel);
+            switch (result)
+            {
+                case DialogResult.Yes:
+                    frmMenu mn = new frmMenu();
+                    string query = "Delete From organos Where id_organo ='" + id_organo + "'";
+                    MySqlConnection Conn = new MySqlConnection(mn.ConexDBGlobal);
+                    MySqlCommand cmd = new MySqlCommand(query, Conn);
+                    MySqlDataReader Read;
+                    try
+                    {
+                        Conn.Open();
+                        Read = cmd.ExecuteReader();
+                        MessageBox.Show("Borrado!");
+                        while (Read.Read())
+                        {
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    btnMostrar.PerformClick();
+                    break;
+                case DialogResult.No:
+                    MessageBox.Show("No");
+                    break;
+                case DialogResult.Cancel:
+                    MessageBox.Show("Cancel");
+                    break;
+            }
+        }
+        string id_organo;
+        private void dtaOrganos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id_organo = dtaOrganos.Rows[e.RowIndex].Cells[0].Value.ToString();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Organos_Datos OD = new Organos_Datos();
+            OD.CargarDatos(id_organo);
+            OD.Show();
+        }
     }
 }

@@ -1,7 +1,6 @@
 C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\bin\Debug\DeepTec.exe.config
 C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\bin\Debug\DeepTec.exe
 C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\bin\Debug\DeepTec.pdb
-C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\bin\Debug\MySql.Data.dll
 C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\bin\Debug\Google.Protobuf.dll
 C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\bin\Debug\MySql.Data.xml
 C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\Debug\DeepTec.csprojAssemblyReference.cache
@@ -20,3 +19,8 @@ C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\D
 C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\Debug\DeepTec.frmLogin.resources
 C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\Debug\DeepTec.Donador.resources
 C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\Debug\DeepTec.Receptor_Datos.resources
+C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\Debug\DeepTec.usuarios.resources
+C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\Debug\DeepTec.Trasplantes_Datos.resources
+C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\Debug\DeepTec.Organos_Datos.resources
+C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\Debug\DeepTec.Doctores_Datos.resources
+C:\Users\CarlosClowm\Documents\Visual Studio 2017\Proyects\DeepTec\DeepTec\obj\Debug\DeepTec.Usuarios_Datos.resources

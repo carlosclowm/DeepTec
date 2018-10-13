@@ -31,7 +31,7 @@ namespace DeepTec
                 connect = new MySqlConnection(conn);
                 connect.Open();
             }
-            catch (MySqlException e)
+            catch (MySqlException ex)
             {
                 throw;
             }
@@ -59,7 +59,7 @@ namespace DeepTec
         {
             Conexion_db();
             MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandText = "Select * from usuarios where usuario=@user and contraseña=@pass";
+            cmd.CommandText = "Select * from usuarios where usuario=@user and contra=@pass";
             cmd.Parameters.AddWithValue("@user", usuario);
             cmd.Parameters.AddWithValue("@pass", contraseña);
             cmd.Connection = connect;

@@ -71,6 +71,12 @@
     <Compile Include="Doctores.Designer.cs">
       <DependentUpon>Doctores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doctores_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctores_Datos.Designer.cs">
+      <DependentUpon>Doctores_Datos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,12 @@
     <Compile Include="Organos.Designer.cs">
       <DependentUpon>Organos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Organos_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organos_Datos.Designer.cs">
+      <DependentUpon>Organos_Datos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receptor.cs">
@@ -121,8 +133,29 @@
     <Compile Include="Trasplantes.Designer.cs">
       <DependentUpon>Trasplantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Trasplantes_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trasplantes_Datos.Designer.cs">
+      <DependentUpon>Trasplantes_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usuarios.Designer.cs">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios_Datos.Designer.cs">
+      <DependentUpon>Usuarios_Datos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Doctores.resx">
       <DependentUpon>Doctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctores_Datos.resx">
+      <DependentUpon>Doctores_Datos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Donador.resx">
       <DependentUpon>Donador.cs</DependentUpon>
@@ -138,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Organos.resx">
       <DependentUpon>Organos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organos_Datos.resx">
+      <DependentUpon>Organos_Datos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -156,6 +192,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Trasplantes.resx">
       <DependentUpon>Trasplantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trasplantes_Datos.resx">
+      <DependentUpon>Trasplantes_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usuarios.resx">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios_Datos.resx">
+      <DependentUpon>Usuarios_Datos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

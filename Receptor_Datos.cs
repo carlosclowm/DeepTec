@@ -33,6 +33,29 @@ namespace DeepTec
             {
                 DataRow row = dt.Rows[0];
                 txtID.Text = row["id_receptor"].ToString();
+                txtNombre.Text = row["nombre_receptor"].ToString();
+                txtAPA.Text = row["apa_receptor"].ToString();
+                txtAMA.Text = row["ama_receptor"].ToString();
+                cmbSangre.Text = row["tipo_sangre_receptor"].ToString();
+                txtEdad.Text = row["edad_receptor"].ToString();
+                cmbSexo.Text = row["sexo_receptor"].ToString();
+                if(row["pago"].ToString() == "1")
+                {
+                    cmbPago.Text = "✓";
+                }
+                else
+                {
+                    cmbPago.Text = "X";
+                }
+                txtMontoPago.Text = row["cantidad_pago"].ToString();
+                txtNomRespon.Text = row["nombre_responsable"].ToString();
+                txtFechaEspera.Text = row["tiempo_espera"].ToString();
+                txtTelefono.Text = row["telefono_receptor"].ToString();
+                txtDireccion.Text = row["direccion"].ToString();
+                txtPais.Text = row["pais_receptor"].ToString();
+                txtEstado.Text = row["estado_receptor"].ToString();
+                txtRegion.Text = row["region_receptor"].ToString();
+                txtCiudad.Text = row["ciudad_receptor"].ToString();
             }
             btnAgregar.Visible = false;
             txtID.ReadOnly = true;
@@ -73,6 +96,36 @@ namespace DeepTec
             else
             {
                 return 1;
+            }
+        }
+
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmMenu mn = new frmMenu();
+                string query = "Update receptor set nombre_receptor='"+txtNombre.Text+ "', apa_receptor='"+txtAPA.Text+ "', ama_receptor='"+txtAMA.Text
+                    + "', tipo_sangre_receptor='"+ cmbSangre.Text+ "', edad_receptor='"+txtEdad.Text+ "', sexo_receptor='"+cmbSexo.Text+ "', pago=b'"+IntaBit(cmbPago.Text)
+                    + "', cantidad_pago='"+txtMontoPago.Text+ "', nombre_responsable='"+txtNomRespon.Text+ "', tiempo_espera='"+ txtFechaEspera.Text
+                    + "', telefono_receptor='"+txtTelefono.Text+ "', pais_receptor='"+ txtPais.Text+ "', estado_receptor='"+ txtEstado.Text+ "', region_receptor='"+ txtRegion.Text
+                    + "', ciudad_receptor='"+ txtCiudad.Text+ "', direccion='"+txtDireccion.Text+ "' where id_receptor='"+txtID.Text+"' ;";
+                MySqlConnection conn = new MySqlConnection(mn.ConexDBGlobal);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                MySqlDataReader Read;
+                conn.Open();
+                Read = cmd.ExecuteReader();
+                MessageBox.Show("Datos Actualizados");
+                while (Read.Read())
+                {
+
+                }
+                conn.Close();
+                this.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

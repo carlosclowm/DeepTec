@@ -37,13 +37,14 @@
             this.lblRango = new System.Windows.Forms.Label();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTituloMenu
             // 
             this.lblTituloMenu.AutoSize = true;
             this.lblTituloMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloMenu.Location = new System.Drawing.Point(37, 9);
+            this.lblTituloMenu.Location = new System.Drawing.Point(41, 9);
             this.lblTituloMenu.Name = "lblTituloMenu";
             this.lblTituloMenu.Size = new System.Drawing.Size(278, 20);
             this.lblTituloMenu.TabIndex = 0;
@@ -117,6 +118,7 @@
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Visible = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnCerrarSesion
             // 
@@ -128,12 +130,23 @@
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(74, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(212, 20);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Carniceria \"El Fortachon\"";
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(357, 213);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.lblRango);
@@ -163,6 +176,7 @@
         public System.Windows.Forms.Label lblRango;
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Label label1;
     }
 }
 

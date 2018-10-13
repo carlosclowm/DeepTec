@@ -89,41 +89,46 @@
             this.dtaOrganos.Location = new System.Drawing.Point(13, 43);
             this.dtaOrganos.Name = "dtaOrganos";
             this.dtaOrganos.ReadOnly = true;
-            this.dtaOrganos.Size = new System.Drawing.Size(544, 395);
+            this.dtaOrganos.RowHeadersVisible = false;
+            this.dtaOrganos.Size = new System.Drawing.Size(512, 395);
             this.dtaOrganos.TabIndex = 9;
+            this.dtaOrganos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaOrganos_CellClick);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(432, 13);
+            this.btnAgregar.Location = new System.Drawing.Point(531, 150);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 10;
-            this.btnAgregar.Text = "button1";
+            this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(513, 13);
+            this.btnEliminar.Location = new System.Drawing.Point(531, 179);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 11;
-            this.btnEliminar.Text = "button1";
+            this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(594, 14);
+            this.btnEditar.Location = new System.Drawing.Point(531, 208);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 12;
-            this.btnEditar.Text = "button1";
+            this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // Organos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 450);
+            this.ClientSize = new System.Drawing.Size(617, 450);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);

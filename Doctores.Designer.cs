@@ -41,7 +41,7 @@
             // 
             // txtEspecifica
             // 
-            this.txtEspecifica.Location = new System.Drawing.Point(330, 11);
+            this.txtEspecifica.Location = new System.Drawing.Point(302, 11);
             this.txtEspecifica.Name = "txtEspecifica";
             this.txtEspecifica.Size = new System.Drawing.Size(127, 20);
             this.txtEspecifica.TabIndex = 11;
@@ -55,7 +55,7 @@
             "Nombre",
             "Apellido Paterno",
             "Apellido Materno"});
-            this.cbBusqueda.Location = new System.Drawing.Point(203, 12);
+            this.cbBusqueda.Location = new System.Drawing.Point(175, 12);
             this.cbBusqueda.Name = "cbBusqueda";
             this.cbBusqueda.Size = new System.Drawing.Size(121, 21);
             this.cbBusqueda.TabIndex = 10;
@@ -64,7 +64,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(135, 18);
+            this.label1.Location = new System.Drawing.Point(107, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 9;
@@ -88,41 +88,46 @@
             this.dtaDoctores.Location = new System.Drawing.Point(13, 43);
             this.dtaDoctores.Name = "dtaDoctores";
             this.dtaDoctores.ReadOnly = true;
-            this.dtaDoctores.Size = new System.Drawing.Size(452, 404);
+            this.dtaDoctores.RowHeadersVisible = false;
+            this.dtaDoctores.Size = new System.Drawing.Size(415, 404);
             this.dtaDoctores.TabIndex = 13;
+            this.dtaDoctores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaDoctores_CellClick);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(472, 13);
+            this.btnAgregar.Location = new System.Drawing.Point(434, 85);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 14;
-            this.btnAgregar.Text = "button1";
+            this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(553, 13);
+            this.btnEliminar.Location = new System.Drawing.Point(434, 114);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 15;
-            this.btnEliminar.Text = "button1";
+            this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(634, 13);
+            this.btnEditar.Location = new System.Drawing.Point(434, 143);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 16;
-            this.btnEditar.Text = "button1";
+            this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // Doctores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 459);
+            this.ClientSize = new System.Drawing.Size(522, 459);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
