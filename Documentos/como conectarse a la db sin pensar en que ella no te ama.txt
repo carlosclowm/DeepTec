@@ -1,0 +1,4 @@
+en el form Menu hay una variable global que esta en la siguiente manera solo modificar lo necesario xD
+ella no te ama :'u  *inserte cancion de jose jose*
+
+public string ConexDBGlobal = "server=localhost; database=trasplante_de_organos; Uid=root; pwd=peluche785;SslMode=none";
